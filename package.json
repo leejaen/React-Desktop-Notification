@@ -1,0 +1,11 @@
+{
+  "name": "react-desktop-notification",
+  "version": "1.0.1",
+  "description": "Use browser's desktop notification in React. It depends on notifications API of chrome or else browser's other way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "leejaen",
+  "license": "ISC"
+}
