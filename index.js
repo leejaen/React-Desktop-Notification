@@ -10,9 +10,6 @@ var Notifier = React.createClass({
         console.log("Your browser is not support desktop notifications, please try Chrome or Firefox.");
         return false;
       }
-      if (!(icon.match(/\.(jpeg|jpg|gif|png)$/) != null)) {
-        return false;
-      }
 
       if (Notification.permission !== "granted") {
         Notification.requestPermission();
