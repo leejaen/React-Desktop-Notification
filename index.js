@@ -5,7 +5,7 @@ var React = require('react');
 
 var Notifier = React.createClass({
   statics: {
-    start: function(title, context, url, icon) {
+    start: function(title, context, url, icon, name) {
       if (!Notification) {
         console.log("Your browser is not support desktop notifications, please try Chrome or Firefox.");
         return false;
@@ -19,7 +19,7 @@ var Notifier = React.createClass({
           body: context,
         });
         notification.onclick = function() {
-          window.open(url);
+          window.open(url, name);
         };
       }
     }
