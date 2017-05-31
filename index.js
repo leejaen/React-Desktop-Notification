@@ -6,6 +6,12 @@ var React = require('react');
 var Notifier = React.createClass({
   statics: {
     start: function(title, context, url, icon, name) {
+      name=name||("notiwin"+(function(n) {
+        var rnd = "";
+        for (var i = 0; i < n; i++)
+          rnd += Math.floor(Math.random() * 10);
+        return rnd;
+      })(5));
       if (!Notification) {
         console.log("Your browser is not support desktop notifications, please try Chrome or Firefox.");
         return false;
@@ -14,8 +20,9 @@ var Notifier = React.createClass({
       if (Notification.permission !== "granted") {
         Notification.requestPermission();
       } else {
+        icon=(icon&&icon.match(/^.*\.(jpeg|jpg|gif|png)/gi))?icon:"http://ob9oayzh3.bkt.clouddn.com/images.png"
         var notification = new Notification(title, {
-          icon: icon || "http://ob9oayzh3.bkt.clouddn.com/images.png",
+          icon: icon,
           body: context,
         });
         notification.onclick = function() {
