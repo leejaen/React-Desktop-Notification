@@ -26,7 +26,9 @@ var Notifier = React.createClass({
           body: context,
         });
         notification.onclick = function() {
-          window.open(url, name);
+            parent.focus();
+            window.focus(); //just in case, older browsers
+            this.close();
         };
       }
     }
