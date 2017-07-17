@@ -4,7 +4,9 @@
 ```
 	npm install --save react-desktop-notification
 	OR
-	yarn add react-desktop-notification```
+	yarn add react-desktop-notification
+
+```
 
 ## usage
 ```
@@ -22,6 +24,7 @@ gotNewNotification(){
 	Notifier.focus("Title","Here is context","www.google.com","validated image url");
 	...
 }
+
 ```
 ## API
 `Notifier.start(notifier_title, notifier_context, opening_url, icon_url, window_name)`
