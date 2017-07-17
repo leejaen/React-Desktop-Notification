@@ -26,9 +26,28 @@ var Notifier = React.createClass({
           body: context,
         });
         notification.onclick = function() {
-            parent.focus();
-            window.focus(); //just in case, older browsers
-            this.close();
+          window.open(url, name);
+        };
+      }
+    },
+    focus:function(title, context, url, icon){
+      if (!Notification) {
+        console.log("Your browser is not support desktop notifications, please try Chrome or Firefox.");
+        return false;
+      }
+
+      if (Notification.permission !== "granted") {
+        Notification.requestPermission();
+      } else {
+        icon=(icon&&icon.match(/^.*\.(jpeg|jpg|gif|png)/gi))?icon:"http://ob9oayzh3.bkt.clouddn.com/images.png"
+        var notification = new Notification(title, {
+          icon: icon,
+          body: context,
+        });
+        notification.onclick = function() {
+          parent.focus();
+          window.focus(); //just in case, older browsers
+          this.close();
         };
       }
     }
