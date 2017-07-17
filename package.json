@@ -1,6 +1,6 @@
 {
   "name": "react-desktop-notification",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Use browser's desktop notification in React. It depends on notifications API of chrome or else browser's other way.",
   "main": "index.js",
   "scripts": {
