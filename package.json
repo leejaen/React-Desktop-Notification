@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "leejaen",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "create-react-class": "15.6.2"
+  }
 }
