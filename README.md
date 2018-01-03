@@ -1,10 +1,12 @@
 ## react-desktop-notification
 
+* Use browser's desktop notification in React. It depends on notifications API of chrome or else browser's other way.
+
 ## install
 ```
-	npm install --save react-desktop-notification
-	OR
-	yarn add react-desktop-notification
+npm install --save react-desktop-notification
+OR
+yarn add react-desktop-notification
 
 ```
 
