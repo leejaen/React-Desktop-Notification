@@ -6,6 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/leejaen/React-Desktop-Notification.git"
+  },
+  "keywords": [
+    "react notification",
+    "desktop-notification",
+    "react-desktop-notification",
+    "react-browser-notification"
+  ],
   "author": "leejaen",
   "license": "ISC",
   "dependencies": {
