@@ -36,3 +36,13 @@ gotNewNotification(){
 ## git
 
 https://github.com/leejaen/React-Desktop-Notification.git
+
+## contributors
+
+* Oscar Ruckdeschel: https://github.com/ibiBgOR
+
+* Johnathan Saunders: https://github.com/SirSaunders
+
+* Alexandre Amoedo Amorim: https://github.com/amoedoamorim
+
+BIG Thanks!
