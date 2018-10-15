@@ -13,8 +13,8 @@ var Notifier = createReactClass({
           rnd += Math.floor(Math.random() * 10);
         return rnd;
       })(5));
-      if (!Notification) {
-        console.log("Your browser is not support desktop notifications, please try Chrome or Firefox.");
+      if (!('Notification' in window)) {
+        console.log("Your browser does not support desktop notifications, please try Chrome or Firefox.");
         return false;
       }
 
@@ -32,8 +32,8 @@ var Notifier = createReactClass({
       }
     },
     focus:function(title, context, url, icon){
-      if (!Notification) {
-        console.log("Your browser is not support desktop notifications, please try Chrome or Firefox.");
+      if (!('Notification' in window)) {
+        console.log("Your browser does not support desktop notifications, please try Chrome or Firefox.");
         return false;
       }
 
